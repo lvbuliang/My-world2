@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+    }
+    .top {
+        height: 80px;
+        /* background-color: red; */
+    }
+    .top-c {
+        width: 1140px;
+        height: 80px;
+        /* background-color: pink; */
+        margin: 0px auto;
+    }
+    .p12 {
+        width: 252px;
+        height: 100%;
+        float: left;
+    }
+    .p1 {
+        width: 252px;
+        height: 38px;
+        background-color: #fff;
+        background: url(img3/p1.png) no-repeat center;
+        padding-top: 18px;
+    }
+    .p2 {
+        width: 66px;
+        height: 12px;
+        background-color: #fff;
+        background: url(img3/p2.png) no-repeat center;
+        position: relative;
+        left:90px;
+        
+    }
+    .nav {
+        float: right;
+        line-height: 80px;
+        }
+        .nav-item {
+        float: left;
+        margin-left: 85px;
+        position: relative;
+    }
+    .nav-item a {
+        font-size: 16px;
+        color: #666666;
+    }
+    .nav-item a:hover{
+        color: red;
+    }
+    .nav-item.active a{
+        color: blue;
+    }
+    .nav-item:hover span{
+        display: block;
+    }
+    .nav-item.active span{
+        display: block;
+    }
+    span{
+        height: 1px;
+        width: 40px;
+        background-color: #b9ab77;
+        position: absolute;
+        bottom: 23px;
+        left: 0px;
+        display: none;
+    }
+    .banner {
+        height: 270px;
+        background-color: black;
+    }
+    .banner-c {
+        width: 1140px;
+        height: 100%;
+        /* background-color: orange; */
+        margin: 0px auto;
+    }
+    .main {
+        height: 1040px;
+        /* background-color: skyblue; */
+    }
+    .main-c {
+        height: 100%;
+        width: 1140px;
+        /* background-color: pink; */
+        margin: 0px auto;
+        position: relative;
+    }
+    .title {
+        padding-top: 100px;
+        position: relative;
+        left: 50%;
+        margin-left: -40px;
+    }
+    .title1 {
+        font-size: 26px;
+        color: #444444;
+    }
+    .title2 {
+        font-size: 16px;
+        color: #c1c1c1;
+        margin-top: 10px;
+    }
+    .p3 {
+        width: 300px;
+        height: 825px;
+        background-color: gray;
+        background: url(img4/p2.png) no-repeat top;
+        position: absolute;
+        top: 212px;
+        }
+    .p4 {
+        width: 300px;
+        height: 825px;
+        background-color: gray;
+        background: url(img4/p3.png) no-repeat top;
+        position: absolute;
+        left: 50%;
+        top: 212px;
+        margin-left: -150px;
+        }
+    .p5 {
+        width: 300px;
+        height: 825px;
+        background-color: gray;
+        background: url(img4/p4.png) no-repeat top;
+        position: absolute;
+        right: 0px;
+        top: 212px;
+        }
+        .title3 {
+            font-size: 18px;
+            font-weight: bolder;
+            color: #3a3a3a;
+            text-align: center;
+        }
+        .title4 {
+            color: #a4a4a4;
+            font-size: 14px;
+            font-weight: bolder;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .title5 {
+            color: #a4a4a4;
+            font-size: 14px;
+            font-weight: bolder;
+            margin-top: 40px;
+            width: 310px;
+        }
+        .title345 {
+            position: relative;
+            top: 485px;
+        }
+        .more {
+            width: 150px;
+            height: 45px;
+            border: 1px solid #b9ab77;
+            text-align: center;
+            line-height: 45px;
+            position: absolute;
+            bottom: 120px;
+            left: 77px;
+        }
+        .more a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            color: #b9ab77;
+        }
+        .line {
+            width: 300px;
+            height: 2px;
+            background-color: #b9ab77;
+            display: block;
+            margin-bottom: 40px;
+        }
+    .footer {
+        height: 100px;
+        background-color: #4d4d4d;
+    }
+    .footer-c {
+        width: 1140px;
+        height: 100%;
+        /* background-color: white; */
+        margin: 0px auto;
+        position: relative;
+    }
+    .last{
+         height: 100px;
+         width: 1132qw40px;
+         margin: 0px auto;
+         background-color: #4d4d4d;
+         position: absolute;
+         bottom: 0px;
+     } 
+     .title101{
+         color: #ffffff;
+         font-size: 12px;
+         line-height: 30px;
+         position: absolute;
+         bottom: 22px;
+     }
+
+      .last-a{
+          float: right;
+          /* position: absolute;
+          right: 300px; */
+          line-height: 100px;
+      }
+     .last-c{
+         font-size: 12px;
+         color: #f1f0f0;
+         float: left;
+         margin-left: 60px;
+         
+      }
+      .last-c a{
+        color: #f1f0f0;
+      }
+      .last-c img{
+        vertical-align: 0.5px;
+        margin-right: 3px;
+      }
+          
+    </style>
+</head>
+<body>
+    <div class="top">
+       <div class="top-c">
+           <div class="p12">
+                <div class="p1">
+
+                    </div>
+                    <div class="p2">
+          
+                    </div>
+           </div>
+         
+          <ul class="nav">
+                <li class="nav-item"><a href="">首页</a>
+                    <span>
+    
+                        </span>
+                    </li>
+                <li class="nav-item"><a href="">婚纱礼服</a>
+                    <span>
+    
+                        </span>
+                    </li>
+                <li class="nav-item"><a href="">珠宝配饰</a>
+                    <span>
+    
+                        </span>
+                    </li>
+                <li class="nav-item"><a href="">最新活动</a>
+                    <span>
+    
+                        </span>
+                    </li>
+                <li class="nav-item active"><a href=""> 关于我们</a>
+                    <span>
+    
+                        </span>
+                   </li>
+            </ul>
+       </div>
+    </div>
+    <div class="banner">
+     <div class="banner-c">
+<img src="img4/p1.png" alt="">
+     </div>
+    </div>
+    <div class="main">
+     <div class="main-c">
+      <div class="title">
+          <div class="title1">
+                设计师
+          </div>
+          <div class="title2">
+                Designers
+          </div>
+      </div>
+      <div class="p3"> 
+          <div class="title345">
+            <div class="title3">
+                    吉承 / Jenny
+               </div>
+               <div class="title4">
+                    VERONICA的视觉艺术总监
+               </div>
+               <div class="title5">
+                    吉承，中国时装设计师代表，JICHENG/织货
+                    byJicheng品牌创始人、设计总监。2015福布斯..
+               </div>
+      </div>
+      <div class="more">
+         <a href=""> MORE</a>
+      </div>
+      <span class="line">
+
+      </span>
+        </div>
+      <div class="p4">
+            <div class="title345">
+                    <div class="title3">
+                            吉承 / Jenny
+                       </div>
+                       <div class="title4">
+                            VERONICA的视觉艺术总监
+                       </div>
+                       <div class="title5">
+                            中国服装设计师协会会员、高级定制工作室“WA
+NG PEIYI”工作室创始人王培沂于1996年...
+
+                       </div>
+              </div>
+      </div>
+      <div class="p5">
+            <div class="title345">
+                    <div class="title3">
+                            比盖尔
+                       </div>
+                       <div class="title4">
+                            服装设计师
+                       </div>
+                       <div class="title5">
+                            设计师吉承（Rankin）生在北京长在香港18岁留
+学英国就读于Central Saint Martins Collage...
+                       </div>
+              </div>
+      </div>
+     </div>
+    </div>
+    <div class="footer">
+      <div class="footer-c">
+            <div class="last">
+                    <div class="title101">
+                           <p class="title10">
+                                   网站备案号：豫ICP备110121210号
+                           </p>
+                           <p class="title11">
+                                   增值电信业务经营许可证号：豫B2-20100033
+                           </p>
+                    </div>
+                    <ul class="last-a">
+                            <li class="last-c">
+                            <img src="p8.png" alt="">
+                               2018 VERONICA</li>
+                            <li class="last-c">
+                                <a href="">联系我们</a>
+                            </li>
+                            <li class="last-c">
+                                <a href="">加入我们</a>
+                            </li>
+                        </ul>
+                </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+    }
+    .top {
+        height: 80px;
+        /* background-color: red; */
+    }
+    .top-c{
+        width: 1080px;
+        height: 100%;
+        /* background-color: pink; */
+        margin: 0px auto;
+
+    }
+    .p1 {width: 177px;
+             height: 42px;
+            background: url('img2/logo.png') no-repeat left;
+            padding-top: 45px;
+            float: left;
+         }
+        .nav {
+        float: right;
+        line-height: 80px;
+        }
+        .nav-item {
+        float: left;
+        margin-left: 85px;
+        position: relative;
+    }
+    .nav-item a {
+        font-size: 16px;
+        color: #666666;
+    }
+    .nav-item a:hover{
+        color: red;
+    }
+    .nav-item.active a{
+        color: blue;
+    }
+    .nav-item:hover span{
+        display: block;
+    }
+    .nav-item.active span{
+        display: block;
+    }
+    span{
+        height: 1px;
+        width: 40px;
+        background-color: #b9ab77;
+        position: absolute;
+        bottom: 23px;
+        left: 0px;
+        display: none;
+    }
+    .banner {
+        height: 270px;
+        /* background-color: blue; */
+        margin: 0px auto;
+    }
+  .banner-c {
+      width: 1200px;
+      height: 100%;
+      background-color: gray;
+      margin: 0px auto;
+      background: url(img6/p1.png) no-repeat center;
+  }
+    .main {
+        height: 1020px;
+        /* background-color: pink; */
+    }
+    .main-c {
+        /* width: 1200px; */
+        height: 100%;
+        /* background-color: skyblue; */
+        margin: 0px auto;
+        position: relative;
+    }
+    .title {
+        margin-left: 540px;
+        padding-top: 100px;
+    }
+    .title1 {
+        font-size: 26px;
+        color: #444444;
+        /* font-weight: bolder; */
+    }
+    .title2 {
+        font-size: 16px;
+        color: #cccccc;
+        font-weight: bolder;
+    }
+    .two {
+        width: 1400px;
+        height: 200px;
+        background-color: skyblue;
+        margin: 0px auto;
+        margin-top: 60px;
+        position: relative;
+    }
+    .two1 {
+        font-size: 60px;
+        color: black;
+         position: absolute;
+         top: 55px;
+         left: 125px;
+    }
+    .two2 {
+        font-size: 16px;
+        color: black;
+      position: absolute;
+       top: 140px;
+       left: 225px;
+    }
+    .two3 {
+        font-size: 16px;
+        color: black;
+      position: absolute;
+      top: 65px;
+      left: 455px;
+    }
+    .two4 {
+        width: 490px;
+        font-size: 12px;
+        color: black;
+        position: absolute;
+        bottom: 65px;
+        right: 260px;
+    }
+    .two5 {
+        position: absolute;
+        left:-200px ;
+        top: -30px;
+    }
+    .three {
+        width: 1200px;
+        height: 200px;
+        /* background-color: pink; */
+        position: relative;
+        border-bottom: 1px solid gray;
+    }
+    .four {
+        width: 1200px;
+        height: 200px;
+        /* background-color: black; */
+        position: relative;
+        border-bottom: 1px solid gray;
+    }
+    .left {
+        width: 28px;
+        height: 28px;
+        border: 1px solid gray;
+        text-align: center;
+        line-height: 28px;
+        float: left;
+      
+    }
+    .left a {
+        font-size: 14px;
+        color: gray;
+        width: 100%;
+        height: 100%;
+        display:block;
+        background-color: gray;
+        display: none;
+    }
+    .right a {
+        font-size: 14px;
+        color: gray;
+        width: 100%;
+        height: 100%;
+        display:block;
+        /* background-color: gray; */
+        /* display: none; */
+    }
+    .right {
+        width: 28px;
+        height: 28px;
+        border: 1px solid gray;
+        text-align: center;
+        line-height: 28px;
+        float: left;
+        margin-left: 10px;
+       
+    }
+    .right:hover a{
+        display: block;
+        color: white;
+        background-color: gray;
+    }
+    .left.active a {
+        display: block;
+        color: white;
+    }
+    .lr {
+        position: absolute;
+       bottom: 60px;
+       left: 50%;
+       margin-left: -35px;
+    }
+    .footer {
+        height: 100px;
+        background-color: #4d4d4d;
+    }
+    .footer-c {
+        width: 1200px;
+        height: 100%;
+        background-color: #4d4d4d;
+        margin: 0px auto;
+        position: relative;
+    }
+    .last{
+         height: 100px;
+         width: 1200px;
+         margin: 0px auto;
+         background-color: #4d4d4d;
+         position: absolute;
+         bottom: 0px;
+     } 
+     .title101{
+         color: #ffffff;
+         font-size: 12px;
+         line-height: 30px;
+         position: absolute;
+         bottom: 22px;
+     }
+
+      .last-a{
+          float: right;
+          /* position: absolute;
+          right: 300px; */
+          line-height: 100px;
+      }
+     .last-c{
+         font-size: 12px;
+         color: #f1f0f0;
+         float: left;
+         margin-left: 60px;
+         
+      }
+      .last-c a{
+        color: #f1f0f0;
+      }
+      .last-c img{
+        vertical-align: 0.5px;
+        margin-right: 3px;
+      }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="top-c">
+                <div class="p12">
+                        <div class="p1">
+        
+                            </div>
+                            <div class="p2">
+                  
+                            </div>
+                   </div>
+                 
+                  <ul class="nav">
+                        <li class="nav-item"><a href="">首页</a>
+                            <span>
+            
+                                </span>
+                            </li>
+                        <li class="nav-item"><a href="">婚纱礼服</a>
+                            <span>
+            
+                                </span>
+                            </li>
+                        <li class="nav-item"><a href="">珠宝配饰</a>
+                            <span>
+            
+                                </span>
+                            </li>
+                        <li class="nav-item"><a href="">最新活动</a>
+                            <span>
+            
+                                </span>
+                            </li>
+                        <li class="nav-item active"><a href=""> 关于我们</a>
+                            <span>
+            
+                                </span>
+                           </li>
+                    </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-c">
+
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-c">
+            <div class="title">
+                <div class="title1">
+                        最新活动
+                </div>
+                <div class="title2">
+                        Latest Activities
+                </div>
+            </div>
+            <div class="two">
+               <div class="two1">
+                    06-18
+               </div>
+               <div class="two2">
+                    2018
+               </div>
+               <div class="two3">
+                    Her Style 2017/18春夏米兰婚纱礼服流行发布
+               </div>
+               <div class="two4">
+                   <div class="two5">
+                        Rick Owens 2011/12秋冬巴黎男装流行发布 纵观这场秀的主题，你可以想尽各种荒诞的元素，
+                        都不足以来描述这场“怪诞”的晚餐。Thom大叔将他一向怪诞风趣的服装风格...
+                   </div>
+                    
+               </div>
+            </div>
+            <div class="three">
+                    <div class="two1">
+                            02-26
+                    </div>
+                    <div class="two2">
+                         2018
+                    </div>
+                    <div class="two3">
+                            VERONICA服饰与美容独家专访
+                    </div>
+                    <div class="two4">
+                            《THE LITTLE BLACK JACKET》摄影展去年在巴黎、东京、纽约、伦敦、米兰等国际都会
+                            展出，反响非常热烈。今年，摄影展登录上海和北京两大城市舞台，增加多位艺文界...
+                    </div>
+                 </div>
+                 <div class="four">
+                        <div class="two1">
+                                12-24
+                        </div>
+                        <div class="two2">
+                             2018
+                        </div>
+                        <div class="two3">
+                                圣诞高级定制发布会
+                        </div>
+                        <div class="two4">
+                                摄影展在北京酒仙桥路798艺术区旁的751D•PARK的第一车间盛大揭幕。开幕红毯名流云集，
+Vogue第一时间带来现场盛况...
+                        </div>
+                     </div>
+                     <div class="lr">
+                            <div class="left active">
+                                    <a href="">1</a>
+                                </div>
+                                <div class="right">
+                                    <a href="">2</a>
+                                </div>
+                     </div>
+                    
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-c">
+                <div class="footer-c">
+                        <div class="last">
+                                <div class="title101">
+                                       <p class="title10">
+                                               网站备案号：豫ICP备110121210号
+                                       </p>
+                                       <p class="title11">
+                                               增值电信业务经营许可证号：豫B2-20100033
+                                       </p>
+                                </div>
+                                <ul class="last-a">
+                                        <li class="last-c">
+                                        <img src="p8.png" alt="">
+                                           2018 VERONICA</li>
+                                        <li class="last-c">
+                                            <a href="">联系我们</a>
+                                        </li>
+                                        <li class="last-c">
+                                            <a href="">加入我们</a>
+                                        </li>
+                                    </ul>
+                            </div>
+        </div>
+    </div>
+</body>
+</html>
